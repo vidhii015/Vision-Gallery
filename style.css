@@ -252,7 +252,7 @@ main .art-by-price .prices {
 main .art-by-price .prices .price,
 main .art-by-shape .shape {
   height: 220px;
-  width: 310px;
+  width: 312px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -495,7 +495,7 @@ main .art-section .art-by-medium .mediums {
 main .art-section .art-by-medium .mediums .medium,
 main .art-section .art-by-size .sizes .size {
   height: 190px;
-  width: 306px;
+  width: 309px;
   display: flex;
   flex-direction: column;
   justify-content: center;
