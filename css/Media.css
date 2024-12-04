@@ -34,9 +34,14 @@ header {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 header i {
   font-size: 30px;
+}
+header #sidebar {
+  font-size: 20px;
+  display: none;
 }
 header nav {
   display: flex;
@@ -128,9 +133,10 @@ main .paintings {
 }
 main .paintings .art-fairs {
   width: 370px;
+  padding: 0 20px;
 }
 main .paintings .art-fairs img {
-  width: 330px;
+  width: 100%;
   object-fit: contain;
 }
 main .paintings .art-fairs h2 {

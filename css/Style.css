@@ -40,9 +40,14 @@ header {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 header i {
   font-size: 30px;
+}
+header #sidebar {
+  font-size: 20px;
+  display: none;
 }
 header nav {
   display: flex;
@@ -525,16 +530,16 @@ main .art-section .art-by-size .sizes {
   position: relative;
 }
 main .art-section .art-by-size .sizes #small div {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
 }
 main .art-section .art-by-size .sizes #medium div {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
 main .art-section .art-by-size .sizes #large div {
-  height: 80px;
-  width: 80px;
+  height: 65px;
+  width: 65px;
 }
 main .art-section .art-by-size .sizes #customize .wrapper {
   display: flex;
@@ -600,7 +605,7 @@ footer {
 footer::before {
   top: 12px;
 }
-.footer-top {
+footer .footer-top {
   display: flex;
   justify-content: center;
 }
