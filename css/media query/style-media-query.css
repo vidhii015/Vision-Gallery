@@ -18,11 +18,11 @@
     padding: 20px 15px;
     border-radius: 7px;
     background-color: #93887e;
-    opacity: 0.9;
     position: absolute;
-    right: 20px;
+    top: 40px;
+    right: 5px;
     z-index: 5;
-    display: none;
+    opacity: 0;
   }
   header::before,
   header::after,
@@ -225,11 +225,11 @@
     padding: 20px 15px;
     border-radius: 7px;
     background-color: #93887e;
-    opacity: 0.9;
     position: absolute;
-    right: 20px;
+    top: 40px;
+    right: 5px;
     z-index: 5;
-    display: none;
+    opacity: 0;
   }
   header::before,
   header::after,
@@ -550,7 +550,6 @@
     display: none;
   }
   header nav {
-    display: flex;
     flex-direction: row;
     gap: 17px;
     background-color: transparent;
@@ -815,7 +814,7 @@
 
   main .art-section .art-by-medium .mediums .medium,
   main .art-section .art-by-size .sizes .size {
-    width: 304px;
+    width: 300px;
   }
 
   main .about-us-section .content .info {

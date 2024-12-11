@@ -3,20 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-body::-webkit-scrollbar {
-  background: transparent;
-  width: 7px;
-}
-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    rgb(90, 140, 117),
-    rgb(110, 172, 142),
-    rgb(164, 194, 180),
-    rgb(154, 173, 193),
-    rgb(93, 142, 196)
-  );
-  border-radius: 20px;
-}
 
 :root {
   --primary-padding: 10px 140px;
@@ -53,6 +39,12 @@ header nav {
   display: flex;
   gap: 60px;
   align-items: center;
+  transition: all 500ms;
+}
+header nav.show {
+  top: 60px;
+  right: 20px;
+  opacity: 0.9;
 }
 header::before,
 header::after,
