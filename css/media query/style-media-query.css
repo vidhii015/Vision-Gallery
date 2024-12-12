@@ -52,11 +52,6 @@
     width: 100%;
   }
 
-  main .hero-section {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
   main .hero-section .info {
     gap: 7px;
     width: 100%;
@@ -265,18 +260,12 @@
     width: 100%;
   }
 
-  main .hero-section {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
   main .hero-section .info {
     gap: 7px;
     width: 100%;
   }
   main .hero-section img {
-    height: 150px;
-    width: 100%;
+    display: none;
   }
   main .hero-section .info h3,
   main .hero-section .info h2 {
@@ -444,10 +433,8 @@
     gap: 7px;
     width: 40%;
   }
-  main .hero-section {
-    flex-wrap: nowrap;
-  }
   main .hero-section img {
+    display: block;
     height: 230px;
     width: 65%;
   }
