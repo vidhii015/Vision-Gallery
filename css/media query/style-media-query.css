@@ -266,12 +266,18 @@
     width: 100%;
   }
 
+  main .hero-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
   main .hero-section .info {
     gap: 7px;
-    width: 33%;
+    width: 100%;
   }
   main .hero-section img {
     height: fit-content;
+    width: 100%;
   }
   main .hero-section .info h3,
   main .hero-section .info h2 {
@@ -435,8 +441,16 @@
     padding: 20px 45px;
   }
 
+  main .hero-section .info {
+    gap: 7px;
+    width: 40%;
+  }
+  main .hero-section {
+    flex-wrap: nowrap;
+  }
   main .hero-section img {
     height: 230px;
+    width: 65%;
   }
   main .hero-section .info h3,
   main .hero-section .info h2 {
