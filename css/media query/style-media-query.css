@@ -62,8 +62,7 @@
     width: 100%;
   }
   main .hero-section img {
-    height: 150px;
-    width: 100%;
+    display: none;
   }
   main .hero-section .info h3,
   main .hero-section .info h2 {
