@@ -116,6 +116,12 @@ header nav {
   display: flex;
   gap: 60px;
   align-items: center;
+  transition: all 500ms;
+}
+header nav.show {
+  top: 60px;
+  right: 20px;
+  opacity: 0.9;
 }
 header::before,
 header::after,

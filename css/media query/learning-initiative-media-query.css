@@ -20,9 +20,10 @@
     background-color: #93887e;
     opacity: 0.9;
     position: absolute;
-    right: 20px;
+    top: 40px;
+    right: 5px;
     z-index: 5;
-    display: none;
+    opacity: 0;
   }
   header::before,
   header::after,
@@ -46,7 +47,7 @@
     bottom: -5px;
   }
   header nav a:hover:before,
-  header nav a:nth-child(1):before {
+  header nav a:nth-child(5):before {
     opacity: 1;
     height: 1.5px;
     width: 100%;
@@ -113,9 +114,10 @@
     background-color: #93887e;
     opacity: 0.9;
     position: absolute;
-    right: 20px;
+    top: 40px;
+    right: 5px;
     z-index: 5;
-    display: none;
+    opacity: 0;
   }
   header::before,
   header::after,
@@ -141,7 +143,7 @@
     bottom: -5px;
   }
   header nav a:hover:before,
-  header nav a:nth-child(1):before {
+  header nav a:nth-child(5):before {
     height: 1.5px;
     width: 100%;
   }
