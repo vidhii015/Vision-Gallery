@@ -16,12 +16,22 @@
     flex-direction: column;
     gap: 18px;
     padding: 20px 15px;
-    border-radius: 7px;
-    background-color: #93887e;
+    background-color: #fbfbfb;
+    border: 2px solid transparent;
+    border-image: linear-gradient(
+        to bottom right,
+        rgb(78, 123, 101),
+        rgb(131, 203, 168),
+        rgb(164, 192, 180),
+        rgb(154, 173, 193),
+        rgb(102, 150, 202),
+        rgb(56, 87, 121)
+      )
+      1;
     opacity: 0.9;
     position: absolute;
     top: 40px;
-    right: 5px;
+    right: 4px;
     z-index: 5;
     opacity: 0;
   }
@@ -120,12 +130,22 @@
     flex-direction: column;
     gap: 18px;
     padding: 20px 15px;
-    border-radius: 7px;
-    background-color: #93887e;
+    background-color: #fbfbfb;
+    border: 2px solid transparent;
+    border-image: linear-gradient(
+        to bottom right,
+        rgb(78, 123, 101),
+        rgb(131, 203, 168),
+        rgb(164, 192, 180),
+        rgb(154, 173, 193),
+        rgb(102, 150, 202),
+        rgb(56, 87, 121)
+      )
+      1;
     opacity: 0.9;
     position: absolute;
     top: 40px;
-    right: 5px;
+    right: 4px;
     z-index: 5;
     opacity: 0;
   }
@@ -250,6 +270,7 @@
     flex-direction: row;
     gap: 17px;
     background-color: transparent;
+    border: 0;
     opacity: 1;
     position: static;
   }
@@ -271,7 +292,7 @@
     left: 50%;
   }
   header nav a:hover:before,
-  header nav a:nth-child(1):before {
+  header nav a:nth-child(4):before {
     height: 15px;
     width: 1.5px;
   }

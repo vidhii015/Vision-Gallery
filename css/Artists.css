@@ -37,7 +37,7 @@ header nav {
 }
 header nav.show {
   top: 60px;
-  right: 20px;
+  right: 15px;
   opacity: 0.9;
 }
 header::before,

@@ -37,7 +37,7 @@ header nav {
 }
 header nav.show {
   top: 60px;
-  right: 20px;
+  right: 15px;
   opacity: 0.9;
 }
 header::before,
@@ -137,8 +137,9 @@ main .contact-card .info h2 {
   margin-bottom: 22px;
   letter-spacing: 1.5px;
 }
-main .contact-card .info h3 {
+main .contact-card .info h5 {
   color: var(--text-secondary-color);
+  font-size: 19px;
   line-height: 40px;
   font-weight: 400;
 }
