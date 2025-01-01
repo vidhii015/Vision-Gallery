@@ -75,6 +75,10 @@ header nav a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
 }
+header #cart {
+  font-size: 22px;
+  color: black;
+}
 header nav a::before {
   content: "";
   width: 1.5px;
