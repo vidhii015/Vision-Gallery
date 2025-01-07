@@ -4,19 +4,6 @@ function runGsap(params) {
   if (window.innerWidth > 760) {
     const tl = gsap.timeline();
 
-    tl.from("header .logo", {
-      y: -20,
-      opacity: 0,
-      duration: 0.5,
-      delay: 0.5,
-    });
-    tl.from("header nav a", {
-      y: -20,
-      opacity: 0,
-      duration: 0.5,
-      stagger: 0.3,
-    });
-
     gsap.from(".hero-section .info", {
       x: -100,
       opacity: 0,
@@ -120,97 +107,6 @@ function runGsap(params) {
         },
       }
     );
-
-    // gsap.from("main h1, main h3", {
-    //   x: -60,
-    //   opacity: 0,
-    //   delay: 0.3,
-    //   duration: 1,
-    // });
-
-    // gsap.from(".paintings .artist", {
-    //   y: -50,
-    //   opacity: 0,
-    //   delay: 0.3,
-    //   duration: 1,
-    //   stagger: 0.2,
-    // });
-
-    // gsap.from(".paintings .art-fairs", {
-    //   y: -50,
-    //   opacity: 0,
-    //   delay: 0.3,
-    //   duration: 1,
-    //   stagger: 0.2,
-    //   scrollTrigger: {
-    //     trigger: ".paintings .art-fairs",
-    //     start: "top 85%",
-    //   },
-    // });
-
-    // gsap.from(".current-fair", {
-    //   y: -50,
-    //   opacity: 0,
-    //   delay: 0.3,
-    //   duration: 1,
-    // });
-
-    // gsap.from("main p", {
-    //   y: 50,
-    //   opacity: 0,
-    //   delay: 0.3,
-    //   duration: 1,
-    // });
-
-    // gsap.from("main .contact-card img", {
-    //   x: -50,
-    //   opacity: 0,
-    //   delay: 0.3,
-    //   duration: 1,
-    // });
-
-    // gsap.from("main .contact-card .info", {
-    //   x: 50,
-    //   opacity: 0,
-    //   delay: 0.3,
-    //   duration: 1,
-    // });
-
-    // gsap.from("footer .footer-center", {
-    //   y: -50,
-    //   opacity: 0,
-    //   delay: 0.2,
-    //   duration: 1,
-    //   stagger: 0.2,
-    //   scrollTrigger: {
-    //     trigger: "footer",
-    //     start: "top 75%",
-    //   },
-    // });
-
-    // gsap.from("footer .footer-bottom p", {
-    //   x: -80,
-    //   opacity: 0,
-    //   delay: 0.2,
-    //   duration: 1,
-    //   stagger: 0.2,
-    //   scrollTrigger: {
-    //     trigger: "footer",
-    //     start: "top 55%",
-    //   },
-    // });
-
-    // gsap.from("footer .footer-bottom .socials", {
-    //   x: 80,
-    //   opacity: 0,
-    //   delay: 0.2,
-    //   duration: 1,
-    //   stagger: 0.2,
-    //   scrollTrigger: {
-    //     trigger: "footer",
-    //     start: "top 55%",
-    //   },
-    // });
   }
 }
 

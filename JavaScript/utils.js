@@ -1,7 +1,5 @@
 import cartData from "./cart-data.js";
 
-console.log(cartData);
-
 cartData.forEach((item) => {
   addToCart(item);
 });

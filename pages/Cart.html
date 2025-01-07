@@ -3,31 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/Style.css" />
-    <link rel="stylesheet" href="../pages/Add-To-Cart.html" />
-    <link rel="stylesheet" href="../css/Add-To-Cart.css" />
-    <link rel="stylesheet" href="../JavaScript/Add-To-Cart.js" />
+    <title>Cart | Vision Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/Cart.css" />
   </head>
   <body>
-    <div class="product-section">
-      <div class="new-products">
-        <!-- <div class="product-item" id="seven-horses-running">
-          <div class="tag-2">Sold</div>
-          <img src="images/Seven-Horses-Painting.jpg" alt="" />
-          <p>SEVEN HORSES</p>
-          <h4>36*24 inches</h4>
-          <div class="price">
-            <strike>RS.18,000</strike>
-            <h5>Rs.12,000</h5>
-          </div>
-          <div class="off">
-            <h6>Save Rs.6,OOO</h6>
-            <h6>(33% Off)</h6>
-          </div>
-        </div> -->
+    <!-- header -->
+    <header>
+      <i class="fa-brands fa-slack logo"></i>
+      <i class="fa-solid fa-bars" id="sidebar"></i>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./Artists.html">Artists</a>
+        <a href="./Art -Fairs.html">Art Fairs</a>
+        <a href="./Exhibitions.html">Exhibitions</a>
+        <a href="./Learning-Initiative.html">Learning Initiative</a>
+        <a href="./Media.html">Media</a>
+        <a href="./Contact.html">Contact</a>
+      </nav>
+      <a href="pages/Cart.html">
+        <i class="fa-solid fa-cart-shopping" id="cart"></i
+      ></a>
+    </header>
+    <!-- main -->
+    <main id="main">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody class="new-products">
+          <tr class="empty">
+            <td>
+              <img src="../images/empty-cart.png" alt="" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="btn">
+          <i class="fa-solid fa-chevron-up"></i><a href="#main">BACK TO TOP</a>
+        </div>
       </div>
-    </div>
+      <div class="footer-center">
+        <div class="Collectors-quick-links">
+          <h4>FOR COLLECTORS</h4>
+          <ul>
+            <li><a href="#">Collector's Support</a></li>
+            <li><a href="#">Resell Works</a></li>
+            <li><a href="#">Collector's FAQ</a></li>
+          </ul>
+        </div>
+        <div class="art-category-quick-links">
+          <h4>ART CATEGORY</h4>
+          <ul>
+            <li><a href="#">Digital Art</a></li>
+            <li><a href="#">Drawing</a></li>
+            <li><a href="#">painting</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">printmaking</a></li>
+            <li><a href="#">Sculpture | 3D</a></li>
+          </ul>
+        </div>
+        <div class="artists-quick-links">
+          <h4>ARTISTS</h4>
+          <ul>
+            <li><a href="pages/Artists.html">M F Husain</a></li>
+            <li><a href="pages/Artists.html">S H Raza</a></li>
+            <li><a href="pages/Artists.html">F N Souza</a></li>
+            <li><a href="pages/Artists.html">Jatin Das</a></li>
+            <li><a href="pages/Artists.html">Thota Vaikuntam</a></li>
+            <li><a href="pages/Artists.html">Jyoti Bhatt</a></li>
+            <li><a href="pages/Artists.html">Shobha Broota</a></li>
+            <li><a href="pages/Artists.html">Laxma Goud</a></li>
+            <li><a href="pages/Artists.html">K C Subramanyan</a></li>
+          </ul>
+        </div>
+        <div class="sellers-quick-links">
+          <h4>FOR SELLERS</h4>
+          <ul>
+            <li><a href="#">Sell Your Art</a></li>
+            <li><a href="#">Mojarto For Sellers</a></li>
+            <li><a href="#">Seller's FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="about-us-quick-links">
+          <h4>ABOUT US</h4>
+          <ul>
+            <li><a href="#">The Team</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Work With Us</a></li>
+            <li><a href="#">Contact I-Js</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy Copyright</p>
+        <div class="socials">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- script -->
     <script type="module" src="/JavaScript/cart.js"></script>
+
+    <!-- header js -->
+    <script src="../JavaScript/header.js"></script>
   </body>
 </html>

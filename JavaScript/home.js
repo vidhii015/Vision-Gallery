@@ -8,9 +8,7 @@ const products = document.querySelector(".product-section .products");
 
 products.addEventListener("click", (e) => {
   let item = e.target.cloneNode(true);
-  console.dir(item);
   addToCart(item);
 });
 
 const newProducts = document.querySelector(".new-products");
-console.log(newProducts);
