@@ -2,8 +2,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function runGsap(params) {
   if (window.innerWidth > 760) {
-    const tl = gsap.timeline();
-
     gsap.from("main h1, main h3", {
       x: -60,
       opacity: 0,

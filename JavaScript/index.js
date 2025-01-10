@@ -2,8 +2,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function runGsap(params) {
   if (window.innerWidth > 760) {
-    const tl = gsap.timeline();
-
     gsap.from(".hero-section .info", {
       x: -100,
       opacity: 0,
@@ -101,6 +99,7 @@ function runGsap(params) {
         opacity: 0,
         delay: 0.2,
         duration: 1,
+        stagger: 0.2,
         scrollTrigger: {
           trigger: ".explore-section",
           start: "top 75%",

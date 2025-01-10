@@ -2,21 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: var(--text-primary-color);
 }
 
 :root {
   --primary-padding: 10px 140px;
-  --margin-top: 100px;
-  --margin-bottom: 20px;
   --line-color: #b4b4b4;
   --text-primary-color: rgb(55, 60, 65);
   --text-secondary-color: rgb(77, 82, 94);
-  --icon-color-green-subtle: rgb(81, 131, 107);
-  --icon-color-green: rgb(58, 93, 76);
-  --icon-color-blue-subtle: rgb(81, 125, 172);
-  --icon-color-blue: rgb(56, 87, 121);
-  --icon-color-brown-subtle: rgb(149, 135, 121);
-  --icon-color-brown: rgb(116, 99, 84);
 }
 
 /* header */
@@ -111,10 +104,19 @@ main {
 }
 main table {
   width: 100%;
+  margin-top: 12px;
   padding: 10px 0;
 }
 main table thead {
-  border-bottom: 1px solid var(--line-color);
+  position: relative;
+}
+main table thead::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--line-color);
+  position: absolute;
+  bottom: -10px;
 }
 main table tbody tr.empty td {
   height: 40vh;
@@ -128,7 +130,7 @@ main table tbody tr.empty img {
   left: 30vw;
 }
 main table tbody .item {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 main table tr td.item {
   display: flex;
@@ -195,7 +197,7 @@ main table tbody td i {
 /* footer */
 
 footer {
-  margin-top: var(--margin-top);
+  margin-top: 50px;
   margin-bottom: 40px;
   padding: var(--primary-padding);
   position: relative;

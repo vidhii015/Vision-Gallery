@@ -62,9 +62,12 @@ products.addEventListener("click", (e) => {
     let quantity = parseInt(quantityInput.value);
     let priceText = priceElement.textContent.trim(); // Get the price text and remove extra spaces
 
-    // Ensure the price is correctly formatted as a float (removes currency symbols)
-    let price = parseFloat(priceText.replace(/[^\d.-]/g, ""));
+    // Remove "Rs." and commas, then parse it as an integer
+    let price = parseInt(
+      priceText.replace(/Rs\./i, "").replace(/,/g, "").trim()
+    );
 
+    // increment and decrement of quantity
     if (target.classList.contains("increment")) {
       quantity += 1;
     } else if (target.classList.contains("decrement") && quantity > 1) {
@@ -74,10 +77,11 @@ products.addEventListener("click", (e) => {
     quantityInput.value = quantity;
 
     // Calculate the total price based on quantity
-    const newTotal = (quantity * price).toFixed(2); // Ensure 2 decimal places
-    totalElement.textContent = `₹${newTotal}`; // Display the price with Rupees symbol
+    const newTotal = (quantity * price).toLocaleString("en-IN"); // Ensure 2 decimal places
+    totalElement.textContent = `Rs.${newTotal}`; // Display the price with Rupees symbol
   }
 
+  // Remove item
   if (target.classList.contains("trash")) {
     const productItem = target.closest(".product-item");
     productItem.remove();
