@@ -132,34 +132,34 @@ main table tbody tr.empty img {
 main table tbody .item {
   margin-top: 35px;
 }
-main table tr td.item {
+main table tbody tr td.item {
   display: flex;
   gap: 20px;
 }
-main table tr td img {
+main table tbody tr td img {
   width: 130px;
   height: 150px;
 }
-main table tr td .info {
+main table tbody tr td .info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-main table tr td .info h3 {
+main table tbody tr td .info h3 {
   font-size: 20px;
 }
-main table tr td .info h4 {
+main table tbody tr td .info h4 {
   font-weight: 400;
 }
-main table tr td .info .off {
+main table tbody tr td .info .off {
   display: flex;
   gap: 7px;
 }
-main table tr td .info .off h6 {
+main table tbody tr td .info .off h6 {
   color: var(--text-secondary-color);
   font-size: 13px;
 }
-main table tr td .info .off h6:nth-child(2),
+main table tbody tr td .info .off h6:nth-child(2),
 main table tbody td i {
   color: #d2354f;
 }
@@ -180,6 +180,8 @@ main table tbody td .btns input {
   background-color: transparent;
   outline: 0;
   border: 1px solid var(--text-secondary-color);
+  display: flex;
+  justify-items: center;
 }
 main table tbody td .btns input {
   width: 70px;

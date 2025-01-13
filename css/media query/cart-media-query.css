@@ -1,0 +1,427 @@
+@media (max-width: 400px) {
+  :root {
+    --primary-padding: 10px;
+    --margin-top: 50px;
+    --margin-bottom: 10px;
+    --font-size-primary: 17px;
+    --font-size-secondary: 12px;
+  }
+
+  header {
+    padding: 20px 35px;
+    justify-content: space-between;
+    position: relative;
+  }
+  header nav {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 15px;
+    background-color: #fbfbfb;
+    border: 2px solid transparent;
+    border-image: linear-gradient(
+        to bottom right,
+        rgb(78, 123, 101),
+        rgb(131, 203, 168),
+        rgb(164, 192, 180),
+        rgb(154, 173, 193),
+        rgb(102, 150, 202),
+        rgb(56, 87, 121)
+      )
+      1;
+    opacity: 0.9;
+    position: absolute;
+    top: 40px;
+    right: 4px;
+    z-index: 5;
+    opacity: 0;
+  }
+  header::before,
+  header::after,
+  footer::before,
+  footer .footer-bottom::before {
+    width: 90%;
+    left: 5%;
+  }
+  header #sidebar {
+    display: block;
+  }
+  header nav a {
+    font-size: var(--font-size-secondary);
+  }
+  header nav a::before {
+    width: 60%;
+    height: 1.5px;
+    background-color: black;
+    background-image: none;
+    left: 0;
+    bottom: -5px;
+  }
+  header nav a:hover:before,
+  header nav a:nth-child(7):before {
+    opacity: 1;
+    height: 1.5px;
+    width: 100%;
+  }
+
+  main table thead tr th {
+    font-size: 10px;
+  }
+  main table tbody tr td.item {
+    gap: 5px;
+  }
+  main table tbody tr td img {
+    width: 40px;
+    height: 50px;
+  }
+  main table tbody tr td .info {
+    gap: 2px;
+  }
+  main table tbody tr td .info h3 {
+    font-size: 8px;
+  }
+  main table tbody tr td .info h4 {
+    font-size: 6px;
+  }
+  main table tbody tr td .info .off {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  main table tbody tr td .info .off h6 {
+    font-size: 6px;
+  }
+  main table tbody td .btns button {
+    width: 3px;
+  }
+  main table tbody td .btns button,
+  main table tbody td .btns input {
+    font-size: 5px;
+    padding: 3px 7px;
+  }
+  main table tbody td .btns input {
+    width: 30px;
+  }
+  main table tbody td h5,
+  main table tbody td h4.total,
+  main table tbody td i {
+    font-size: 8px;
+  }
+
+  footer .footer-center {
+    flex-wrap: wrap;
+  }
+  footer .footer-center h4 {
+    font-size: var(--font-size-primary);
+  }
+  footer .footer-center .art-category-quick-links {
+    margin-top: 20px;
+  }
+  footer .footer-center .artists-quick-links,
+  footer .footer-center .sellers-quick-links,
+  footer .footer-center .about-us-quick-links {
+    display: none !important;
+  }
+  footer .footer-bottom .socials {
+    gap: 15px;
+  }
+  footer .footer-bottom .socials i {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 400px) {
+  :root {
+    --primary-padding: 10px 25px;
+    --margin-top: 50px;
+    --margin-bottom: 10px;
+    --font-size-primary: 18px;
+    --font-size-secondary: 13px;
+  }
+
+  header {
+    padding: 20px 35px;
+    justify-content: space-between;
+    position: relative;
+  }
+  header nav {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 15px;
+    background-color: #fbfbfb;
+    border: 2px solid transparent;
+    border-image: linear-gradient(
+        to bottom right,
+        rgb(78, 123, 101),
+        rgb(131, 203, 168),
+        rgb(164, 192, 180),
+        rgb(154, 173, 193),
+        rgb(102, 150, 202),
+        rgb(56, 87, 121)
+      )
+      1;
+    opacity: 0.9;
+    position: absolute;
+    top: 40px;
+    right: 4px;
+    z-index: 5;
+    opacity: 0;
+  }
+  header::before,
+  header::after,
+  footer::before {
+    width: 90%;
+    left: 5%;
+  }
+  footer .footer-bottom::before {
+    width: 100%;
+  }
+  header #sidebar {
+    display: block;
+  }
+  header nav a {
+    font-size: var(--font-size-secondary);
+  }
+  header nav a::before {
+    width: 60%;
+    height: 1.5px;
+    background-color: black;
+    background-image: none;
+    left: 0;
+    bottom: -5px;
+  }
+  header nav a:hover:before,
+  header nav a:nth-child(7):before {
+    height: 1.5px;
+    width: 100%;
+  }
+
+  main table thead tr th {
+    font-size: 12px;
+  }
+  main table tbody tr td.item {
+    gap: 5px;
+  }
+  main table tbody tr td img {
+    width: 50px;
+    height: 60px;
+  }
+  main table tbody tr td .info {
+    gap: 5px;
+  }
+  main table tbody tr td .info h3 {
+    font-size: 10px;
+  }
+  main table tbody tr td .info h4 {
+    font-size: 8px;
+  }
+  main table tbody tr td .info .off {
+    gap: 3;
+    flex-wrap: wrap;
+  }
+  main table tbody tr td .info .off h6 {
+    font-size: 8px;
+  }
+  main table tbody td .btns button {
+    width: 3px;
+  }
+  main table tbody td .btns button,
+  main table tbody td .btns input {
+    font-size: 5px;
+    padding: 3px 7px;
+  }
+  main table tbody td .btns input {
+    width: 30px;
+  }
+  main table tbody td h5,
+  main table tbody td h4.total,
+  main table tbody td i {
+    font-size: 8px;
+  }
+
+  footer .footer-center {
+    flex-wrap: wrap;
+  }
+  footer .footer-center h4 {
+    font-size: var(--font-size-primary);
+  }
+  footer .footer-center .artists-quick-links,
+  footer .footer-center .sellers-quick-links {
+    margin-top: 40px;
+  }
+  footer .footer-center .about-us-quick-links {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    --margin-top: 70px;
+    --margin-bottom: 20px;
+    --font-size-primary: 24px;
+    --font-size-secondary: 18px;
+  }
+
+  header {
+    padding: 20px 45px;
+  }
+
+  footer .footer-center h4 {
+    font-size: var(--font-size-secondary);
+  }
+  footer .footer-center .artists-quick-links,
+  footer .footer-center .sellers-quick-links {
+    margin-top: 0;
+  }
+  footer .footer-center .sellers-quick-links {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --primary-padding: 10px 45px;
+    --font-size-primary: 26px;
+    --font-size-secondary: 20px;
+  }
+
+  header {
+    padding: 6px 45px;
+  }
+  header #sidebar {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    background-color: transparent;
+    border: 0;
+    opacity: 1;
+    position: static;
+  }
+  header nav a {
+    font-size: 15px;
+  }
+  header nav a::before {
+    width: 1.5px;
+    height: 7px;
+    background-image: radial-gradient(
+      rgb(78, 123, 101),
+      rgb(131, 203, 168),
+      rgb(164, 192, 180),
+      rgb(154, 173, 193),
+      rgb(102, 150, 202),
+      rgb(56, 87, 121)
+    );
+    bottom: -16px;
+    left: 50%;
+  }
+  header nav a:hover:before,
+  header nav a:nth-child(7):before {
+    height: 15px;
+    width: 1.5px;
+  }
+
+  main table thead tr th {
+    font-size: 16px;
+  }
+  main table tbody tr td.item {
+    gap: 20px;
+  }
+  main table tbody tr td img {
+    width: 130px;
+    height: 150px;
+  }
+  main table tbody tr td .info {
+    gap: 10px;
+  }
+  main table tbody tr td .info h3 {
+    font-size: 15px;
+  }
+  main table tbody tr td .info h4 {
+    font-size: 13px;
+  }
+  main table tbody tr td .info .off {
+    gap: 7px;
+  }
+  main table tbody tr td .info .off h6 {
+    font-size: 13px;
+  }
+  main table tbody td .btns button {
+    width: 30px;
+  }
+  main table tbody td .btns button,
+  main table tbody td .btns input {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  main table tbody td .btns input {
+    width: 70px;
+  }
+  main table tbody td h5,
+  main table tbody td h4.total,
+  main table tbody td i {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --margin-top: 100px;
+  }
+
+  header {
+    padding: 6px 65px;
+  }
+  header nav {
+    gap: 35px;
+  }
+
+  main table tbody td h5,
+  main table tbody td h4.total,
+  main table tbody td i {
+    font-size: 15px;
+  }
+
+  footer .footer-center .artists-quick-links,
+  footer .footer-center .sellers-quick-links,
+  footer .footer-center .about-us-quick-links {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --margin-top: 100px;
+    --primary-padding: 10px 140px;
+  }
+
+  header {
+    padding: 6px 150px;
+  }
+  header::before,
+  header::after,
+  footer::before {
+    width: 82%;
+    left: 9%;
+  }
+  header nav {
+    gap: 50px;
+  }
+}
+
+@media (min-width: 1445px) {
+  header {
+    padding: 6px 240px;
+  }
+  header nav {
+    gap: 60px;
+  }
+
+  main table tbody tr td .info h4 {
+    font-size: 16px;
+  }
+  main table tbody td h5,
+  main table tbody td h4.total,
+  main table tbody td i {
+    font-size: 16px;
+  }
+}
