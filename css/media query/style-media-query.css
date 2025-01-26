@@ -44,6 +44,8 @@
   }
   header #sidebar {
     display: block;
+    position: absolute;
+    right: 22%;
   }
   header nav a {
     font-size: var(--font-size-secondary);
@@ -269,6 +271,8 @@
   }
   header #sidebar {
     display: block;
+    position: absolute;
+    right: 22%;
   }
   header nav a {
     font-size: var(--font-size-secondary);
@@ -585,6 +589,9 @@
   header {
     padding: 6px 45px;
   }
+  header .pages {
+    gap: 0;
+  }
   header #sidebar {
     display: none;
   }
@@ -649,7 +656,7 @@
   }
 
   header {
-    padding: 6px 65px;
+    padding: 6px 75px;
   }
   header nav {
     gap: 35px;
@@ -756,7 +763,7 @@
   }
 
   header {
-    padding: 6px 150px;
+    padding: 6px 200px;
   }
   header::before,
   header::after,
@@ -830,7 +837,7 @@
 
 @media (min-width: 1445px) {
   header {
-    padding: 6px 240px;
+    padding: 6px 220px;
   }
   header nav {
     gap: 60px;

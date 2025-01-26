@@ -21,7 +21,7 @@
 /* header */
 
 header {
-  padding: 20px 140px;
+  padding: 6px 220px;
   position: relative;
   margin-top: 20px;
   display: flex;
@@ -352,8 +352,7 @@ main .product-section h1 {
 }
 main .product-section p {
   font-size: 17px;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin: 15px 0;
 }
 main .product-section .products {
   display: flex;
@@ -378,12 +377,16 @@ main .product-section .products .product-item h3 {
   background-color: black;
   color: white;
   font-size: 16px;
-  padding: 5px 15px;
+  padding: 7px 14px;
   border-radius: 5px;
   position: absolute;
   top: 25%;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   transition: all 500ms;
+  cursor: pointer;
 }
 main .product-section .products .product-item:hover h3 {
   opacity: 1;
@@ -392,6 +395,9 @@ main .product-section .products .product-item:hover h3 {
 main .product-section .products .product-item h3:hover {
   color: black;
   background-color: white;
+}
+main .product-section .products .product-item h3:active {
+  scale: 0.6;
 }
 main .product-section .products .product-item .tag {
   background-color: rgb(29, 29, 29);

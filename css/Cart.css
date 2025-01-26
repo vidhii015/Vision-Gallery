@@ -139,14 +139,16 @@ main table tbody tr td.item {
 main table tbody tr td img {
   width: 130px;
   height: 150px;
+  object-fit: cover;
 }
 main table tbody tr td .info {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 5px;
 }
 main table tbody tr td .info h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 main table tbody tr td .info h4 {
   font-weight: 400;
