@@ -1,14 +1,13 @@
 import addToCart from "./utils.js";
 import cartData from "./cart-data.js";
-const product = document.querySelectorAll(
-  ".product-section .products .product-item"
+
+const cartBtns = document.querySelectorAll(
+  ".product-section .products .product-item .cart-btn"
 );
 
-const products = document.querySelector(".product-section .products");
-
-products.addEventListener("click", (e) => {
-  let item = e.target.cloneNode(true);
-  addToCart(item);
+cartBtns.forEach((cartBtn) => {
+  cartBtn.addEventListener("click", (e) => {
+    let item = e.target.closest(".product-item").cloneNode(true); // Clone the entire product-item
+    addToCart(item); // Pass the cloned item to addToCart
+  });
 });
-
-const newProducts = document.querySelector(".new-products");
