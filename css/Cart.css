@@ -110,6 +110,12 @@ main table {
 main table thead {
   position: relative;
 }
+main table thead tr th {
+  text-align: start;
+}
+main table thead tr th:nth-child(1) {
+  text-align: center;
+}
 main table thead::before {
   content: "";
   height: 1px;
