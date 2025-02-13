@@ -20,5 +20,5 @@ A beautifully designed **e-commerce art gallery** that brings artwork to life wi
 - **GSAP (GreenSock Animation Platform)**
 
 
-## 🔗 Live Demo  
+### 🔗 Live Demo  
 [View Website](https://vidhii015.github.io/Vision-Gallery/)
