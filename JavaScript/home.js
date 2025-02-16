@@ -9,7 +9,7 @@ cartBtns.forEach((cartBtn) => {
   cartBtn.addEventListener("click", (e) => {
     cartBtn.innerHTML = `<i class="fa-solid fa-check"></i>added to cart`; //  Changing button's text
 
-    let item = e.target.closest(".product-item").cloneNode(true); // Clone the entire product-item
-    addToCart(item); // Pass the cloned item to addToCart
+    let item = e.target.closest(".product-item").cloneNode(true); // Clone the product-item
+    addToCart(item); // addToCart item
   });
 });

@@ -7,14 +7,14 @@ const products = document.querySelector(".new-products");
 
 const empty = document.getElementsByClassName("empty")[0];
 
-// Check if there are any items in cart
+// Check if any items in cart
 if (parsedObjects.length > 0) {
   empty.style.display = "none";
 } else {
   empty.style.display = "table-row";
 }
 
-// Add products dynamically
+// Add products
 parsedObjects.forEach((item) => {
   let newItem = document.createElement("tr");
   newItem.classList.add("product-item");
@@ -46,7 +46,7 @@ parsedObjects.forEach((item) => {
   products.append(newItem);
 });
 
-// Event delegation for increment, decrement and trash buttons
+// increment, decrement and trash buttons
 products.addEventListener("click", (e) => {
   const target = e.target;
 
@@ -62,7 +62,7 @@ products.addEventListener("click", (e) => {
     let quantity = parseInt(quantityInput.value);
     let priceText = priceElement.textContent.trim(); // Get the price text and remove extra spaces
 
-    // Remove "Rs." and commas, then parse it as an integer
+    // Remove "Rs." and commas
     let price = parseInt(
       priceText.replace(/Rs\./i, "").replace(/,/g, "").trim()
     );
@@ -76,7 +76,7 @@ products.addEventListener("click", (e) => {
 
     quantityInput.value = quantity;
 
-    // Calculate the total price based on quantity
+    // Calculate the total price
     const newTotal = (quantity * price).toLocaleString("en-IN"); // Ensure 2 decimal places
     totalElement.textContent = `Rs.${newTotal}`; // Display the price with Rupees symbol
   }
@@ -86,7 +86,7 @@ products.addEventListener("click", (e) => {
     const productItem = target.closest(".product-item");
     productItem.remove();
 
-    // Check if there are no products left
+    // Check if no products left
     if (products.querySelectorAll(".product-item").length === 0) {
       empty.style.display = "table-row";
     }
